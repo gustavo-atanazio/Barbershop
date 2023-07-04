@@ -21,7 +21,7 @@
 }
 
 .navbar-toggle {
-    background-color: var(--header-bg-color);
+    background-color: var(--nav-bg-color);
     width: 100%;
     height: 80px;
 
@@ -31,7 +31,7 @@
 }
 
 .nav {
-    background-color: var(--header-bg-color);
+    background-color: var(--nav-bg-color);
 
     width: 12rem;
     height: 100vh;
