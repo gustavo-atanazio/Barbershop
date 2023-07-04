@@ -1,3 +1,7 @@
+:root {
+  --header-bg-color: #B2B2B2;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -2,12 +2,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: var(--header-bg-color);
 }
 
 #header button {
     background: none;
     border: none;
-    width: 2.5rem;
+    width: 2rem;
 }
 
 /* Icon size */
@@ -17,5 +18,44 @@
 }
 
 #header img {
-    width: 50%;
+    width: 35%;
+    margin: 0.5rem 0;
+}
+
+#nav {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    #header button {
+        display: none;
+    }
+
+    #header img {
+        width: 10%;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav ul {
+        list-style: none;
+        display: flex;
+        gap: 6rem;
+    }
+
+    #nav li {
+        transition: 0.3s;
+    }
+
+    #nav li:hover {
+        transform: scale(1.1);
+    }
+
+    #nav a {
+        text-decoration: none;
+        color: #222;
+        font-size: 1.3rem;
+    }
 }

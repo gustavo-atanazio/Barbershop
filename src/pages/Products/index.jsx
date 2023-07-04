@@ -1,9 +1,8 @@
 import { useContext } from "react";
 import { SidebarContext } from "../../context/sidebarContext";
-
 import Sidebar from "../../components/Sidebar/Sidebar";
 
-function Home() {
+function Products() {
   const {isOpen} = useContext(SidebarContext);
 
   return (
@@ -13,4 +12,4 @@ function Home() {
   )
 }
 
-export default Home;
+export default Products;
