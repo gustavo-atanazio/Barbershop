@@ -1,28 +1,59 @@
-import { useContext } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { SidebarContext } from '../../context/sidebarContext';
+import { RxHamburgerMenu } from 'react-icons/rx';
+import { AiOutlineClose, AiFillHome } from 'react-icons/ai';
+import { FaShoppingCart, FaPhoneAlt } from 'react-icons/fa';
 
 import './Header.css';
 import barberLogo from '../../assets/barber_logo.png';
 
-import { RxHamburgerMenu } from 'react-icons/rx';
-
 function Header() {
-    const {toggle} = useContext(SidebarContext);
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen(!isOpen);
+
+    const sidebarData = [
+        {
+            title: "Home",
+            path: "/",
+            icon: <AiFillHome/>
+        },
+        {
+            title: "Produtos",
+            path: "/products",
+            icon: <FaShoppingCart/>
+        },
+        {
+            title: "Contato",
+            path: "/contact",
+            icon: <FaPhoneAlt/>
+        }
+    ];
 
     return (
-        <header id='header'>
-            <button onClick={() => toggle()}>
-                <RxHamburgerMenu/>
-            </button>
-            <img src={barberLogo} alt="Logo da Barbershop"/>
+        <header>
+            <div id='header'>
+                <RxHamburgerMenu onClick={toggle}/>
 
-            <nav id='nav'>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/products">Produtos</Link></li>
-                    <li><Link to="/contact">Contato</Link></li>
+                <img src={barberLogo} alt="Logo da Barbershop"/>
+            </div>
+
+            <nav className={isOpen ? 'nav active' : 'nav'}>
+                <ul className='nav-items'>
+                    <li className="navbar-toggle" onClick={toggle}>
+                        <AiOutlineClose/>
+                    </li>
+
+                    {sidebarData.map((item, index) => {
+                        return (
+                            <li key={index} className='nav-text' onClick={toggle}>
+                                <Link to={item.path}>
+                                    {item.icon}
+                                    <span>{item.title}</span>
+                                </Link>
+                            </li>
+                        )
+                    })}
                 </ul>
             </nav>
         </header>

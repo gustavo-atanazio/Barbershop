@@ -1,14 +1,9 @@
-import { useContext } from "react";
-import { SidebarContext } from "../../context/sidebarContext";
-
-import Sidebar from "../../components/Sidebar/Sidebar";
+import About from "../../components/About/About";
 
 function Home() {
-  const {isOpen} = useContext(SidebarContext);
-
   return (
     <>
-      {isOpen && <Sidebar/>}
+      <About/>
     </>
   )
 }
