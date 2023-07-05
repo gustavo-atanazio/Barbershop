@@ -1,0 +1,23 @@
+#footer {
+    background-color: var(--nav-bg-color);
+    color: #CCC;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer img {
+    width: 25%;
+    margin: 0.5rem 0;
+}
+
+#footer p {
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+    #footer img {
+        width: 10%;
+    }
+}
