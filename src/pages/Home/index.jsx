@@ -1,9 +1,9 @@
-import About from "../../components/About/About";
+import Presentation from "../../components/Presentation/Presentation.jsx";
 
 function Home() {
   return (
     <>
-      <About/>
+      <Presentation/>
     </>
   )
 }
