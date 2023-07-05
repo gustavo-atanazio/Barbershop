@@ -36,6 +36,18 @@ function Header() {
                 <RxHamburgerMenu onClick={toggle}/>
 
                 <img src={barberLogo} alt="Logo da Barbershop"/>
+
+                <ul className='header-links'>
+                    {sidebarData.map((item, index) => {
+                        return (
+                            <li key={index} className='header-links-text'>
+                                <Link to={item.path}>
+                                    {item.title}
+                                </Link>
+                            </li>
+                        )
+                    })}
+                </ul>
             </div>
 
             <nav className={isOpen ? 'nav active' : 'nav'}>
