@@ -6,10 +6,12 @@ function Presentation() {
         <section className='presentation'>
             <div className='presentation-text-container'>
                 <h2>A sua barbearia de confiança</h2>
-                <p>Na Barbershop você encontra cortes de cabelo elegantes, barbas impecáveis e 
-                    tratamentos faciais revigorantes. Nossa equipe experiente combina técnicas tradicionais 
-                    com toques modernos para resultados incríveis. Desfrute de um ambiente agradável enquanto 
-                    cuidamos do seu estilo com profissionalismo.</p>
+                <p>
+                    Na Barbershop você encontra cortes de cabelo elegantes, barbas impecáveis e
+                    tratamentos faciais revigorantes. Nossa equipe experiente combina técnicas tradicionais
+                    com toques modernos para resultados incríveis. Desfrute de um ambiente agradável enquanto
+                    cuidamos do seu estilo com profissionalismo.
+                </p>
             </div>
 
             <div className='presentation-img-container'>

@@ -1,0 +1,49 @@
+.professionals {
+    text-align: center;
+}
+
+.professionals h2 {
+    margin: 2rem 0 1rem 0;
+}
+
+.professionals p {
+    padding: 0 0.8rem;
+}
+
+.professionals-img-container {
+    margin: 1rem 5%;
+}
+
+.professionals-img-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.barber2 {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .professionals p {
+        margin: 0 5rem;
+        padding: 0;
+        line-height: 24px;
+        font-size: 1.2rem;
+    }
+    
+    .professionals-img-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        margin-top: 1.5rem;
+    }
+
+    .professionals-img-container img {
+        width: 45%;
+    }
+
+    .barber2 {
+        display: inline-block;
+    }
+}
