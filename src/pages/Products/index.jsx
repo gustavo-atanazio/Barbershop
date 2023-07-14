@@ -10,7 +10,7 @@ function Products() {
     <section className="products">
       <h2>Conheça nossos cortes</h2>
 
-      <div className='container'>
+      <div className='products-container'>
         {cortes.map((corte, index) => (
           <Card 
             imagem={corte.imagem}
@@ -25,7 +25,7 @@ function Products() {
 
       <h2>Encontre os melhores produtos</h2>
 
-      <div className="container">
+      <div className="products-container">
         {produtos.map((produto, index) => (
           <Card
             imagem={produto.imagem}
