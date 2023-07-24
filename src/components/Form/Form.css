@@ -1,0 +1,19 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.form {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    width: 80%;
+    max-width: 700px;
+}

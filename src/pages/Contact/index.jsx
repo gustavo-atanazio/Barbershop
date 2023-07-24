@@ -1,6 +1,11 @@
+import Form from "../../components/Form/Form";
+
 function Contact() {
   return (
-    <h1>Contact</h1>
+    <>
+      <h2>Entre em contato conosco para marcar um horário</h2>
+      <Form/>
+    </>
   )
 }
 
