@@ -23,39 +23,39 @@ function Form() {
                 <InputField
                     inputName='phone'
                     labelText='Telefone'
-                    type='tel'
+                    type='number'
                     placeholder='Insira seu número de telefone'
                 />
 
                 <div className="mid-container">
-                    <span>Como prefere o nosso contato?</span>
+                    <p>Como prefere o nosso contato?</p>
                     <div>
-                        <input type="radio"/>
+                        <input type="radio" name='option'/>
                         Email
                     </div>
 
                     <div>
-                        <input type="radio"/>
+                        <input type="radio" name='option'/>
                         Telefone
                     </div>
 
                     <div>
-                        <input type="radio" defaultChecked/>
+                        <input type="radio" name='option' defaultChecked/>
                         WhatsApp
                     </div>
                 </div>
 
-                <div>
+                <div className='checkbox-container'>
                     <input type="checkbox" defaultChecked/>
                     Gostaria de receber nossas novidades por email?
                 </div>
 
                 <button type='submit'>Enviar</button>
 
-                <div>
+                <div className='schedule-container'>
                     <span>Horário de atendimento</span>
-                    <p>Segunda à sexta: 9h às 18h.</p>
-                    <p>Sábado e domingo: 8h às 17h.</p>
+                    <p>Segunda à sexta: 9h às 17h.</p>
+                    <p>Sábado e domingo: 8h às 18h.</p>
                 </div>
             </form>
         </div>

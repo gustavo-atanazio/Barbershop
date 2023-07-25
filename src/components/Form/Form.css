@@ -5,7 +5,7 @@
 }
 
 .form {
-    border: 1px solid #000;
+    border: 2px solid #444;
     border-radius: 10px;
     padding: 1rem;
     font-size: 1.2rem;
@@ -16,4 +16,38 @@
 
     width: 80%;
     max-width: 700px;
+}
+
+.mid-container p, .checkbox-container {
+    text-align: center;
+}
+
+.mid-container p, .mid-container div {
+    margin-bottom: 0.5rem;
+}
+
+.mid-container div input, .checkbox-container input {
+    margin: 0 1rem;
+}
+
+.form button {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    font-size: 1rem;
+    background-color: #3d3c3c;
+    color: #FFF;
+    transition: 0.3s;
+}
+
+.form button:hover {
+    background-color: #252525;
+}
+
+.schedule-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }

@@ -1,6 +1,14 @@
 import './InputField.css';
 
-function InputField({ inputName = '', labelText = '', type = 'text', placeholder = '', required = false }) {
+function InputField(props) {
+    const {
+        inputName = '',
+        labelText = '',
+        type = 'text',
+        placeholder = '',
+        required = false,
+    } = props;
+
     return (
         <div className='input-container'>
             <label htmlFor={inputName}>{labelText}</label>
