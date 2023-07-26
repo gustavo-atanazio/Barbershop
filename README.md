@@ -1,14 +1,7 @@
 <h1 align='center'>Barbershop</h1>
 
-<style>
-    img {
-        background-color: #BBB;
-        border-radius: 5px
-    }
-</style>
-
 <div align='center'>
-  <img src='./src/assets/barber_logo.png' width='350px'/>
+  <img src='./public/barber_logo-readme.png' width='350px'/>
 </div>
 
 <div align='center'>
