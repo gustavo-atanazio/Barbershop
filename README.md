@@ -1,7 +1,14 @@
 <h1 align='center'>Barbershop</h1>
 
+<style>
+    img {
+        background-color: #BBB;
+        border-radius: 5px
+    }
+</style>
+
 <div align='center'>
-  <img src='' width='700px'/>
+  <img src='./src/assets/barber_logo.png' width='350px'/>
 </div>
 
 <div align='center'>
@@ -15,7 +22,7 @@ Este é um projeto simples de site comercial para barbearias, com uma seção co
 
 
 ## 🚀 Testando o projeto
-Você pode testar o projeto diretamente por este [link](), mas caso queira rodá-lo localmente em sua máquina, siga os passos abaixo:
+Você pode testar o projeto diretamente por este [link](https://barbershop-green.vercel.app/), mas caso queira rodá-lo localmente em sua máquina, siga os passos abaixo:
 
 1. Baixe o arquivo .zip do repositório
     - Vá no botão com texto "Code", no início do repositório, e selecione "Download ZIP"
