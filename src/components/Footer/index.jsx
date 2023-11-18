@@ -1,5 +1,5 @@
 import './Footer.css';
-import barberLogo from '../../assets/barber_logo.png';
+import barberLogo from '/assets/barber_logo.png';
 
 function Footer() {
     return (

@@ -1,6 +1,6 @@
 import './Professionals.css';
-import barber from '../../assets/barber.jpg';
-import barber2 from '../../assets/barber2.jpg';
+import barber from '/assets/barber.jpg';
+import barber2 from '/assets/barber2.jpg';
 
 function Professionals() {
     return (

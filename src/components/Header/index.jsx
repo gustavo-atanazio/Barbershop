@@ -6,7 +6,7 @@ import { AiOutlineClose, AiFillHome } from 'react-icons/ai';
 import { FaShoppingCart, FaPhoneAlt } from 'react-icons/fa';
 
 import './Header.css';
-import barberLogo from '../../assets/barber_logo.png';
+import barberLogo from '/assets/barber_logo.png';
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);

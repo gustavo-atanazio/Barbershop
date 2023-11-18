@@ -1,5 +1,5 @@
 import './Presentation.css';
-import barbershop from '../../assets/barbershop.jpg';
+import barbershop from '/assets/barbershop.jpg';
 
 function Presentation() {
     return (

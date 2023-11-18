@@ -1,15 +1,15 @@
-import Presentation from "../../components/Presentation/Presentation.jsx";
-import Professionals from "../../components/Professionals/Professionals.jsx";
-import Location from "../../components/Location/Location.jsx";
+import Presentation from "components/Presentation";
+import Professionals from "components/Professionals";
+import Location from "components/Location";
 
 function Home() {
-  return (
-    <>
-      <Presentation/>
-      <Professionals/>
-      <Location/>
-    </>
-  )
+    return (
+        <>
+            <Presentation />
+            <Professionals />
+            <Location />
+        </>
+    )
 }
 
 export default Home;
