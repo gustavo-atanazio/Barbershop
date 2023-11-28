@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import './Card.css';
 
 function Card({ imagem, titulo, preco, descricao }) {
@@ -16,4 +17,4 @@ function Card({ imagem, titulo, preco, descricao }) {
     )
 }
 
-export default Card;
+export default memo(Card);
