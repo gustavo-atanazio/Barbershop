@@ -1,7 +1,8 @@
 .card {
     border: 3px solid #7D7463;
     border-radius: 10px;
-    margin: 0 1.5rem 1.5rem;
+    width: 100%;
+    height: 100%;
 }
 
 .card img {
@@ -10,6 +11,9 @@
 }
 
 .card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     padding: 0.5rem;
 }
 
@@ -31,7 +35,6 @@
         flex-direction: column;
         justify-content: space-between;
 
-        max-width: 25%;
         transition: 0.4s;
     }
 
